@@ -7,3 +7,7 @@ resource "aws_vpc" "main" {
     Purpose = "Jenkins Demo"
   }
 }
+
+output "vpc_id" {
+  value = aws_vpc.main.id 
+}
