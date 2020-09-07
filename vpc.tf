@@ -46,7 +46,7 @@ resource "aws_s3_bucket_policy" "s3_codedeploy_policy" {
         {
             "Effect": "Allow",
             "Principal": {
-                "AWS": ""arn:aws:iam::748658621424:role/codedeploy_service_role""
+                "AWS": "arn:aws:iam::748658621424:role/ec2_codedeploy_role"
             },
             "Action": [
                 "s3:Get*",
